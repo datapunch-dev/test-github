@@ -5,8 +5,8 @@ class Card extends Component {
     render() {
       return (
         <div className='col'>
-            <div className="card" style={{width: '18rem', textAlign: 'center' }}>
-                  <button onClick={()=>this.props.onIncrement(this.props.card)} className="btn btn-outline-primary">
+            <div className="card text-dark bg-light mb-3" style={{width: '18rem', textAlign: 'center' }}>
+                  <button onClick={()=>this.props.onIncrement(this.props.card)} className="btn btn-info">
                       Aggiungi <span className='badge badge-light'>{this.props.card.quantità}</span></button>
                  <img src={this.props.card.immagineauto} className="card-img-top" alt="..." />
                  <div className="card-body">
